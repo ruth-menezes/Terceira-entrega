@@ -1,0 +1,214 @@
+/* corpo da página */
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+/* barra de navegação */
+.nav {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  border-bottom: 1px solid #dbdbdb; /* bordinha de baixo do menu */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ícones da barra de navegação */
+.nav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* foto do usuário na barra de navegação */
+.foto-perfil {
+  border-radius: 50%;
+}
+
+/* a caixa de pesquisa */
+.nav input {
+  /* centralizando */
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 215px;
+  height: 28px;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+/* os ícones à direita da barra de navegação */
+.nav-direita {
+  float: right;
+}
+
+/* a pagina em si que contém os posts e a info do usuário à direita */
+.container {
+  width: 935px;
+  margin: 0 auto; /* alinhamento no centro */
+  margin-top: 50px;
+
+  display: flex;
+}
+
+/* todos os posts */
+.postagens {
+  flex: 0 0 65%;
+}
+
+/* usuário que fica à direita dos posts */
+.user-container {
+  margin: 0;
+  flex: 1;
+  grid-column: 2;
+
+  width: 300px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  margin-left: 615px;
+  position: fixed;
+  overflow-x: hidden;
+
+  display: block;
+}
+
+/* sugestões para seguir */
+.sugestao {
+  margin-top: 20px;
+}
+
+.sugestao button {
+  float: right;
+
+  width: 50px;
+  height: 55px;
+  border: none;
+  color: rgb(3, 150, 246);
+}
+
+.sugestao img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* stories */
+.stories {
+  width: 615px;
+  display: flex;
+  overflow: hidden;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  border: 1px solid #dbdbdb;
+}
+
+/* story individual */
+.story {
+  text-align: center;
+}
+
+.story a {
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+}
+
+.story img {
+  width: 56px;
+  height: 56px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border-radius: 50%;
+}
+
+/* container da foto do usuário, seu username e nome*/
+.info-user {
+  float: left;
+  padding-right: 10px;
+}
+
+/* imagem do usuário na div de info */
+.info-user img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+/* username e nome do usuário na info */
+.user-container a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.user-container p {
+  color: rgb(142, 142, 142);
+}
+
+.postagem {
+  width: 615px;
+  margin-bottom: 60px;
+
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+}
+
+/* imagem do post */
+.postagem img {
+  width: 615px;
+  height: 615px;
+}
+
+/* infos do post que ficam embaixo da foto */
+.info-post {
+  /*padding-top: 20px;*/
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.info-post img {
+  width: 22px;
+  height: 22px;
+  padding-right: 10px;
+}
+
+/* a caixa de texto do comentário */
+.info-post input {
+  width: 500px;
+  height: 55px;
+  border: none;
+}
+
+/* botão de enviar comentario */
+.info-post button {
+  width: 50px;
+  height: 55px;
+  border: none;
+  color: rgb(3, 150, 246);
+}
+
+/* nome do usuário que fez o post */
+.info-post a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* ícone do mais */
+.icone-mais {
+  float: right;
+}
